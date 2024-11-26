@@ -1,0 +1,149 @@
+.header{
+    display: flex;
+    height: 55px;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(167, 167, 167);
+    z-index: 100;
+}
+.left{
+    
+    align-items: center;
+    display: flex;
+    
+}
+.hbm{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.ytlogo{
+    height: 20px;
+}
+
+.searchbtn{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(216, 208, 208); 
+    border: 1px solid rgb(228, 217, 217);
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+}
+.searchbtn .tool-tip, 
+.voicesearch .tool-tip,
+.hd-container .tool-tip,
+.notification-count-container .tool-tip{
+    font-family: roboto,arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity o.15s;
+    pointer-events: none;
+    white-space: nowrap;
+
+}
+.searchbtn:hover .tool-tip,
+.voicesearch:hover .tool-tip,
+.hd-container:hover .tool-tip,
+.notification-count-container:hover .tool-tip{
+    
+    opacity: 1;
+}
+.searchbtn, .voicesearch,
+.hd-container,.notification-count-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.voicesearch{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(250, 250, 250);
+}
+.search::placeholder{
+    font-family: roboto,arial;
+    font-size: 16px;
+}
+.search{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(228, 217, 217);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+.middle{
+    
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    
+} 
+.searchicon{
+    height: 25px;
+    
+}
+.vsicon{
+    height: 24px;
+   
+    
+}
+.right{
+    
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.upload{
+    height: 24px;
+}
+.not{
+    height: 24px;
+}
+.app{
+    height: 24px;
+    background-color: white;
+}
+.user{
+    height: 32px ;
+    border-radius: 16px;
+}
+
+.notification-count-container{
+    position: relative;
+}
+.notification-count{
+    position: absolute;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+    top: -2px;
+    right: -5px;
+    font-family: roboto,arial;
+
+}
